@@ -1,0 +1,66 @@
+/* Primary css file for cmc project */
+
+* {
+    font-family: "Lato", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1#page-title {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.header-info {
+    font-size: 0.6rem;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.pull-right {
+    margin-left: auto;
+}
+
+div.header-row {
+    font-weight: bold;
+}
+
+.header-row .col-hdr {
+    padding-top: 15px;
+}
+
+.icon-image {
+    display: inline-block;
+}
+
+.crypto-row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.nbr-cell {
+    text-align: right;
+}
+
+.nav .pagination-nav {
+    height: 10px;
+}
+
+.overlay {
+    background: #e9e9e9;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.spinner {
+    padding: 50px;
+    margin: auto;
+}
+
+.hide {
+    display: none;
+}

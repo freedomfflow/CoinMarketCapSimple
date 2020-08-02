@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+    /global endpoint gives summary data  per coin
+        - total_market_cap for top coins
+        - total volum for top coins
+        - market cap percentage for a few coins
+        - total count of coins
+    /exchanges has a list of exchanges and 24 hour volume, url, image, country, trust score , trust score rank
+    /coins/market
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Market Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cmc_main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+    <script src="./js/cmc_main.js"></script>
+</head>
+<body>
+<div class="overlay">
+    <div class="spinner-border text-success spinner" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+<div class="container">
+    <div class="row header-info justify-content-center">
+        <div class="col-6">
+            Cryptocurrencies: <span id="total-coins"></span> | Markets: <span id="total-markets"></span> | 24h Market
+            Cap Change: <span id="market-cap-change"></span>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <h1 id="page-title">Top Cryptocurrencies by Market Cap</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="coinlist-tab" data-toggle="tab" href="#coinlist" role="tab"
+                       aria-controls="coinlist" aria-selected="true">Cryptos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="exchange-tab" data-toggle="tab" href="#exchange" role="tab"
+                       aria-controls="exchange" aria-selected="false">Exchanges</a>
+                </li>
+                <li class="pull-right pag-nav-li">
+                    <div class="pagination-nav"></div>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="coinlist" role="tabpanel" aria-labelledby="coinlist-tab">
+                    <div class="row header-row">
+                        <div class="col-1 col-hdr">Rank</div>
+                        <div class="col-2 col-hdr">Name</div>
+                        <div class="col-2 col-hdr nbr-cell">Market Cap</div>
+                        <div class="col-1 col-hdr nbr-cell">Price</div>
+                        <div class="col-2 col-hdr nbr-cell">Volume</div>
+                        <div class="col-2 col-hdr nbr-cell">Circulating Supply</div>
+                        <div class="col-2 col-hdr nbr-cell">Change (24h)</div>
+                    </div>
+                    <div class="row data-row">
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="exchange" role="tabpanel" aria-labelledby="exchange-tab">
+                    <div class="jumbotron">COMING SOON</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
