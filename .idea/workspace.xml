@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dfc20f3-ffe6-45d6-8bb9-0b2f7e87f2f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RemixStuff/token.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RemixStuff/SafeMath.sol" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/kitties.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemixStuff/token.sol" beforeDir="false" afterPath="$PROJECT_DIR$/RemixStuff/token.sol" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <workItem from="1597599285138" duration="616000" />
       <workItem from="1598807170580" duration="13000" />
       <workItem from="1598807195991" duration="11395000" />
-      <workItem from="1599329660833" duration="1034000" />
+      <workItem from="1599329660833" duration="2586000" />
     </task>
     <servers />
   </component>
